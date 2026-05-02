@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rewindex-web"
+version = "0.1.0"
+description = "A local web UI for Rewindex - easy to browse your snapshot history, view diffs, and rewind files without leaving the browser."
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "flask>=2.0",
+    "pyyaml>=5.0",
+]
+
+[project.urls]
+Homepage = "https://rewindex.web.app"
+Repository = "https://github.com/crsxmd/rewindex"
+
+[project.scripts]
+rewindex-web = "rewindex_web:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rewindex_web*"]
+
+[tool.setuptools.package-data]
+rewindex_web = ["templates/*", "static/*"]
