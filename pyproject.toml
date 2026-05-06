@@ -1,13 +1,14 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=61,<77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "rewindex-web"
 version = "0.1.0"
 description = "A local web UI for Rewindex - easy to browse your snapshot history, view diffs, and rewind files without leaving the browser."
+readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = { text = "MIT" }
 dependencies = [
     "flask>=2.0",
     "pyyaml>=5.0",

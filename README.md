@@ -9,19 +9,31 @@ A local web UI for [Rewindex](https://rewindex.web.app) - easy to browse your sn
 
 ## Install
 
+### AI agent setup (recommended)
+
+Paste this into your AI agent's chat. It handles everything including install and run:
+
+```
+Read https://raw.githubusercontent.com/crsxmd/rewindex-web/main/AI-SETUP.md and follow the setup instructions.
+```
+
+---
+
+### Manual setup
+
+**1. Install**
+
 ```bash
 pipx install rewindex-web
 ```
 
-## Run
+**2. Run** (each time you want to open the dashboard)
 
 ```bash
 rewindex-web
 ```
 
-Then open [http://localhost:9009](http://localhost:9009)
-
-The dashboard reads directly from `~/.rewindex/` — no extra configuration needed.
+Then open [http://localhost:9009](http://localhost:9009) — reads directly from `~/.rewindex/`, no extra configuration needed.
 
 ## What you can do
 
